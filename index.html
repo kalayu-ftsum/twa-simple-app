@@ -47,7 +47,7 @@
         Telegram.WebApp.ready();
         const initData = Telegram.WebApp.initData;
         Telegram.WebApp.showAlert(Telegram.WebApp.initData)
-        console.log({data: Telegram.WebApp})
+  
 
         // Event occurs whenever theme settings are changed in the user's Telegram app (including switching to night mode).
         Telegram.WebApp.onEvent('themeChanged', function() {
@@ -67,6 +67,8 @@
 
         // Function to toggle main TWA button
         function toggleMainButton() {
+            console.log({data: Telegram.WebApp})
+            console.log({data: Telegram.WebApp.initData})
             if (Telegram.WebApp.MainButton.isVisible) {
                 Telegram.WebApp.MainButton.hide();
             } else {
