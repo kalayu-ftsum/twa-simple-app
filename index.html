@@ -11,7 +11,7 @@
             font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Verdana, sans-serif;
             background-color: var(--bg-color);
             color: var(--tg-theme-text-color);
-            margin: 48px 24px;
+            /* margin: 48px 24px; */
             padding: 0;
             color-scheme: var(--tg-color-scheme);
         }
@@ -88,7 +88,7 @@
         // Init TWA
         Telegram.WebApp.ready();
         const initData = Telegram.WebApp.initData;
-        Telegram.WebApp.showAlert(JSON.stringify(initData))
+        Telegram.WebApp.showAlert(JSON.stringify(initData) + 'Hello')
         console.log({data: Telegram.WebApp})
 
         // Event occurs whenever theme settings are changed in the user's Telegram app (including switching to night mode).
